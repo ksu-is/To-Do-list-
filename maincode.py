@@ -17,3 +17,9 @@ def main():
             print(f"Task '{todo_list.pop(int(input('Enter the task number to mark as done: ')) - 1)}' marked as done!" if todo_list else "Your to-do list is empty.")
         elif choice == "4":
             print("Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please enter a number between 1 and 4.")
+
+if __name__ == "__main__":
+    main()
